@@ -5,7 +5,7 @@ export default class ArchitectureKitSource extends KitSource {
   constructor(api) {
     super(
       api,
-      "https://cyzyspace-public-assets.s3.us-east-1.amazonaws.com/spoke/ArchKit-64274f78e194a993850e208cbaa2fe7c5a35a955.gltf"
+      "https://common-assets.cyzyspace.io/hubs-architecture-kit/glTF/ArchKit/ArchKit-64274f78e194a993850e208cbaa2fe7c5a35a955.gltf"
     );
     this.id = "architecture-kit";
     this.name = "Architecture Kit";

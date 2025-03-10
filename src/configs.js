@@ -28,7 +28,6 @@ if (configs.BASE_ASSETS_PATH) {
 }
 
 function fixBaseAssetsPath(path) {
-  console.log('fixBaseAssetsPath', { path, __webpack_public_path__ });
   // eslint-disable-next-line no-undef
   if (!path.startsWith(__webpack_public_path__)) {
     // eslint-disable-next-line no-useless-escape

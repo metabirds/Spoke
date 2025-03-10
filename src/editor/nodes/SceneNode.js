@@ -61,7 +61,9 @@ export default class SceneNode extends EditorNodeMixin(Scene) {
       }
 
       if (!EntityNodeConstructor) {
-        throw new Error(`No node constructor found for entity "${entity.name}"`);
+        // throw new Error(`No node constructor found for entity "${entity.name}"`);
+        console.warn(`No node constructor found for entity "${entity.name}"`);
+        continue;
       }
 
       const node = await EntityNodeConstructor.deserialize(editor, entity, loadAsync, onError);

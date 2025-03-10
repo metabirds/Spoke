@@ -35,7 +35,7 @@ function fixBaseAssetsPath(path) {
 
     if (matches.length > 1) {
       // eslint-disable-next-line no-undef
-      return __webpack_public_path__ + path.replace(matches[1], "");
+      return __webpack_public_path__ + path.replace(matches[1], "").replace("assets", "assets/images");
     }
   }
 

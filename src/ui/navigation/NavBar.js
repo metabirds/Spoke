@@ -67,8 +67,9 @@ class NavBar extends Component {
       <StyledNavBar>
         <IconContainer>
           <Link to="/">
-            <img src={configs.icon()} alt={configs.name()} />
-          </Link>
+            {/* <img src={configs.icon()} alt={configs.name()} /> */}
+            <img src={'https://common-assets.cyzyspace.io/cyzyspace_logo.png'} alt={'Cyzyspace Scene Editor'} />
+            </Link>
         </IconContainer>
         <MiddleContainer>
           <nav>
